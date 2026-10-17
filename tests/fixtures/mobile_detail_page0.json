@@ -1,0 +1,37 @@
+{
+  "totalCount": 2,
+  "results": [
+    {
+      "mobileDeviceId": "201",
+      "deviceType": "iOS",
+      "general": {
+        "udid": "00008110-000A1B2C3D4E5F60",
+        "displayName": "iPhone-TEST-01",
+        "osVersion": "18.7.1",
+        "osBuild": "22H31",
+        "managed": true,
+        "supervised": true,
+        "lastInventoryUpdateDate": "2026-10-18T19:30:00.123Z",
+        "lastEnrolledDate": "2025-06-01T10:00:00Z",
+        "enrollmentMethodPrestage": {"mobileDevicePrestageId": "3", "profileName": "Corporate iPhone"}
+      },
+      "hardware": {"capacityMb": 122070, "availableSpaceMb": 4500, "usedSpacePercentage": 96,
+                   "serialNumber": "TSTM000001", "model": "iPhone 15", "modelIdentifier": "iPhone15,4"},
+      "security": {"dataProtected": true, "passcodePresent": false, "passcodeCompliant": false,
+                   "hardwareEncryption": 3, "activationLockEnabled": true, "jailBreakDetected": false},
+      "userAndLocation": {"username": "c.tester", "realName": "Cai Tester"},
+      "purchasing": {"purchased": true, "warrantyExpiresDate": "2026-12-01"}
+    },
+    {
+      "mobileDeviceId": "202",
+      "deviceType": "iOS",
+      "general": {"displayName": "iPad-TEST-02", "osVersion": "17.7.2", "managed": true, "supervised": false,
+                  "lastInventoryUpdateDate": "2026-08-01T10:00:00Z", "enrollmentMethodPrestage": null},
+      "hardware": {"capacityMb": 61035, "availableSpaceMb": 30000, "serialNumber": "TSTM000002",
+                   "model": "iPad (10th generation)", "modelIdentifier": "iPad13,18"},
+      "security": {"passcodePresent": true},
+      "userAndLocation": {"username": "", "realName": ""},
+      "purchasing": {}
+    }
+  ]
+}

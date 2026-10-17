@@ -1,0 +1,3 @@
+{"totalCount": 1, "results": [{"id": "1", "name": "Test Apps and Books", "appleId": "", "organizationName": "Test Org",
+  "tokenExpiration": "2026-10-16T09:00:00.000Z", "countryCode": "ES", "locationName": "Test",
+  "automaticallyPopulatePurchasedContent": true, "totalPurchasedLicenses": 120, "totalUsedLicenses": 87}]}

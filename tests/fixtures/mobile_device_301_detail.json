@@ -1,0 +1,9 @@
+{
+  "id": "301", "name": "iPad-OLD-API", "serialNumber": "TSTM000301", "osVersion": "26.0.1", "managed": true,
+  "lastInventoryUpdateTimestamp": "2026-10-18T12:00:00Z", "type": "ios",
+  "location": {"username": "d.tester", "realName": "Dee Tester"},
+  "ios": {"model": "iPad Air (5th generation)", "modelIdentifier": "iPad13,16", "supervised": true,
+          "capacityMb": 61035, "availableMb": 20000,
+          "security": {"passcodePresent": true},
+          "purchasing": {"warrantyExpiresDate": "2027-04-01"}}
+}

@@ -1,0 +1,17 @@
+{
+  "totalCount": 3,
+  "results": [
+    {
+      "id": "103",
+      "general": {"name": "MBA-UNMANAGED", "remoteManagement": {"managed": false}, "reportDate": "2026-05-01T10:00:00Z"},
+      "hardware": {"model": "MacBook Air (13-inch, M2, 2022)", "serialNumber": "TST0000003", "appleSilicon": true},
+      "operatingSystem": {"version": "15.7.1"},
+      "security": {"sipStatus": "NOT_COLLECTED", "gatekeeperStatus": "NOT_COLLECTED",
+                   "bootstrapTokenEscrowedStatus": "NOT_ESCROWED"},
+      "diskEncryption": {"individualRecoveryKeyValidityStatus": "UNKNOWN"},
+      "storage": {},
+      "userAndLocation": {},
+      "purchasing": {}
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{"totalCount": 2, "results": [
+  {"id": "11", "deviceEnrollmentProgramInstanceId": "1", "prestageId": "3", "serialNumber": "TSTM000001",
+   "description": "IPHONE 15 BLACK 128GB", "model": "iPhone 15", "color": "BLACK", "profileStatus": "PUSHED",
+   "deviceAssignedDate": "2025-05-20T00:00:00Z"},
+  {"id": "12", "deviceEnrollmentProgramInstanceId": "1", "prestageId": "", "serialNumber": "TSTNEVER01",
+   "description": "MACBOOK AIR 13 M3", "model": "MacBook Air (13-inch, M3, 2024)", "profileStatus": "EMPTY",
+   "deviceAssignedDate": "2026-09-01T00:00:00Z"}]}

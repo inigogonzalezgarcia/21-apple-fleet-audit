@@ -1,0 +1,80 @@
+{
+  "totalCount": 3,
+  "results": [
+    {
+      "id": "101",
+      "udid": "8C2D2A4E-1F0B-4E55-9A3C-0D6B7E8F9A01",
+      "general": {
+        "name": "MBP-TEST-01",
+        "lastIpAddress": "10.0.4.21",
+        "platform": "Mac",
+        "remoteManagement": {"managed": true, "managementUsername": "jamfadmin"},
+        "supervised": true,
+        "mdmCapable": {"capable": true, "capableUsers": ["a.tester"]},
+        "reportDate": "2026-10-18T22:14:05.512Z",
+        "lastContactTime": "2026-10-19T06:40:11.2Z",
+        "lastEnrolledDate": "2025-03-02T09:12:00Z",
+        "userApprovedMdm": true,
+        "enrolledViaAutomatedDeviceEnrollment": true
+      },
+      "hardware": {
+        "make": "Apple",
+        "model": "MacBook Pro (14-inch, M4, 2024)",
+        "modelIdentifier": "Mac16,1",
+        "serialNumber": "TST0000001",
+        "processorType": "Apple M4",
+        "processorArchitecture": "arm64",
+        "appleSilicon": true
+      },
+      "operatingSystem": {"name": "macOS", "version": "26.0.1", "build": "25A362", "fileVault2Status": "ALL_ENCRYPTED"},
+      "security": {
+        "sipStatus": "ENABLED",
+        "gatekeeperStatus": "APP_STORE_AND_IDENTIFIED_DEVELOPERS",
+        "firewallEnabled": true,
+        "activationLockEnabled": false,
+        "secureBootLevel": "FULL_SECURITY",
+        "bootstrapTokenAllowed": true,
+        "bootstrapTokenEscrowedStatus": "ESCROWED"
+      },
+      "diskEncryption": {
+        "bootPartitionEncryptionDetails": {"partitionName": "Macintosh HD (Boot Partition)",
+                                           "partitionFileVault2State": "ENCRYPTED", "partitionFileVault2Percent": 100},
+        "individualRecoveryKeyValidityStatus": "VALID",
+        "institutionalRecoveryKeyPresent": false,
+        "diskEncryptionConfigurationName": "FileVault - escrow PRK",
+        "fileVault2EnabledUserNames": ["a.tester"]
+      },
+      "storage": {
+        "bootDriveAvailableSpaceMegabytes": 312000,
+        "disks": [{"device": "disk0", "model": "APPLE SSD AP0512Z", "sizeMegabytes": 494384,
+                   "partitions": [{"name": "Macintosh HD (Boot Partition)", "sizeMegabytes": 494384,
+                                   "availableMegabytes": 312000, "partitionType": "BOOT", "percentUsed": 37}]}]
+      },
+      "userAndLocation": {"username": "a.tester", "realname": "Alex Tester", "position": "Analyst"},
+      "purchasing": {"leased": false, "purchased": true, "warrantyDate": "2027-11-30", "appleCareId": ""}
+    },
+    {
+      "id": "102",
+      "general": {
+        "name": "MBP-TEST-02",
+        "remoteManagement": {"managed": true},
+        "supervised": false,
+        "reportDate": "2026-10-10T08:00:00Z",
+        "lastContactTime": "2026-10-11T08:00:00Z",
+        "userApprovedMdm": false,
+        "enrolledViaAutomatedDeviceEnrollment": false
+      },
+      "hardware": {"model": "MacBook Pro (16-inch, 2019)", "serialNumber": "TST000000002", "processorArchitecture": "x86_64"},
+      "operatingSystem": {"name": "macOS", "version": "14.7.6", "fileVault2Status": "NOT_ENCRYPTED"},
+      "security": {"sipStatus": "DISABLED", "gatekeeperStatus": "DISABLED", "firewallEnabled": false,
+                   "bootstrapTokenEscrowedStatus": "NOT_SUPPORTED"},
+      "diskEncryption": {"bootPartitionEncryptionDetails": {"partitionFileVault2State": "UNENCRYPTED"},
+                         "individualRecoveryKeyValidityStatus": "NOT_APPLICABLE"},
+      "storage": {"disks": [{"device": "disk1", "sizeMegabytes": 500000,
+                             "partitions": [{"name": "Macintosh HD", "sizeMegabytes": 500000,
+                                             "availableMegabytes": 20000, "partitionType": "BOOT"}]}]},
+      "userAndLocation": {"username": "b.tester", "realname": "Bea Tester"},
+      "purchasing": {"warrantyDate": "2023-01-15"}
+    }
+  ]
+}
