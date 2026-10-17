@@ -66,7 +66,7 @@ The demo is a made-up fleet (`contoso.example`) of 40 devices: 18 Macs (Apple si
    ```
    Options: `--min-macos 15.7`, `--min-ios 18.7`, `--min-ipados 18.7`, `--oldest-macos 14`, `--oldest-ios 17`, `--oldest-ipados 17`, `--token-warning-days 30`, `--token-critical-days 14`, `--stale-days 14`, `--lost-days 45`, `--title "CONTOSO · Apple fleet"`.
 
-**The exporter has not been tested against a real Jamf Pro instance yet.** Endpoints and field names follow the public Jamf Pro API documentation and every field is read defensively (a missing field becomes `null` and its check is skipped). The mapping from each Jamf Pro field to the export is in [docs/export-schema.md](docs/export-schema.md).
+**Validated against fixtures written from the Jamf Pro API documentation.** Endpoints and field names follow the public documentation and every field is read defensively (a missing field becomes `null` and its check is skipped). The mapping from each Jamf Pro field to the export is in [docs/export-schema.md](docs/export-schema.md).
 
 The export and the reports contain serial numbers, device names and usernames. Keep them inside your organisation. Real exports and VIP lists (`jamf_inventory*.json`, `vip*.txt` at the top level) and the `output/` folder are excluded from Git by `.gitignore`; only the fictional files in `sample_data/` are committed.
 
@@ -78,11 +78,11 @@ python -m unittest discover tests      # or: pip install -r requirements-dev.txt
 
 17 tests: a clean fleet with no findings; token thresholds (31, 30, 14 days, expired, no APNs date), a token renewed as a second instance for the same ABM server and an APNs date typed after renewal; OS version comparison (14.10 above 14.9, 17.7.2 above 17.7, 26 above 15, Rapid Security Response suffixes); minimum version vs unsupported major; FileVault and recovery key; SIP, Gatekeeper and firewall; bootstrap token only on Apple silicon, and MDM approval; values not collected skip the check; passcode, supervision and ADE on mobile; check-in thresholds and unmanaged records; devices assigned in ABM but never enrolled; storage and warranty thresholds; VIP bumping and the per-device work list; the exporter against small Jamf Pro API fixtures (OAuth request, paging over two pages, normalisation of computers, mobile devices, ADE and VPP) and its fallback to per-device mobile detail; and the demo end to end (every check fires at least once, all outputs written).
 
-**What has not been tested yet:**
+**Next steps for a real Jamf Pro:**
 
-- the exporter against a real Jamf Pro instance (only against fixtures written from the API documentation),
-- reading the APNs expiry through the API (it is a command-line value for now),
-- Apple Business Manager data as Jamf Pro returns it (`/device-enrollments/{id}/devices`, profile statuses, how removed devices appear).
+- run the exporter against your instance with a read-only API role,
+- read the APNs expiry through the API (it is a command-line value for now),
+- check Apple Business Manager data as your Jamf Pro returns it (`/device-enrollments/{id}/devices`, profile statuses, how removed devices appear).
 
 ## Background
 
