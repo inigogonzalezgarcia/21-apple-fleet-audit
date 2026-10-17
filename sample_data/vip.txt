@@ -1,0 +1,4 @@
+# Executives and board members: their devices are checked first (one username per line)
+e.navarro
+j.whitfield
+a.okafor
